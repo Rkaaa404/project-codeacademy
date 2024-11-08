@@ -15,8 +15,9 @@ mealRounding= mealTotalRounded - mealTotal
 # Print hasil 
 print("*******************************")
 print(f"Harga Makanan : Rp.{meal} \nPajak(PPN 11%) : Rp. {mealTax} \nTip({tip}%) : Rp.{mealTip}")
-#Kondisi bila perlu pembulatan
-print(f"Total Sebelum Pembulatan: Rp.{mealTotal}")
-if mealRounding != 0:
+if mealRounding != 0: #Kondisi bila perlu pembulatan
+    print(f"Total Sebelum Pembulatan: Rp.{mealTotal}")
     print(f"Pembulatan : Rp.{mealRounding} \nTotal Setelah Pembulatan: Rp.{mealTotalRounded}")
+else :
+    print(f"Total: Rp.{mealTotal}")
 print("*******************************")
